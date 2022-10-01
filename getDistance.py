@@ -28,7 +28,7 @@ def frame_to_video(folder, output, fps=30):
 
 
 def get_midpoint_bbox(
-    bbox_file_per_frame="data/car_truck_cordinates_for_each_frame.json",
+    bbox_file_per_frame="data/object_cordinates.json",
 ):
     with open(bbox_file_per_frame, "r") as f:
         cords = json.load(f)
@@ -81,5 +81,5 @@ def get_vehicle_name(new_cord):
 if __name__ == "__main__":
     new_cord = get_midpoint_bbox()
     frame_list = get_vehicle_name(new_cord)
-    with open("car_names_for_each_frame.json", "w") as f:
+    with open("data/car_names_for_each_frame.json", "w") as f:
         json.dump(frame_list, f, indent=4)

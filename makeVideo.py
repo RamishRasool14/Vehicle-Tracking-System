@@ -3,8 +3,8 @@ import numpy as np
 import os
 import json
 import shutil
-from get_cords import Data
-from track_vehicle import get_midpoint_bbox, get_vehicle_name
+from getLaneCoordinates import Data
+from getDistance import get_midpoint_bbox, get_vehicle_name
 from util import frame_to_video
 import argparse
 
