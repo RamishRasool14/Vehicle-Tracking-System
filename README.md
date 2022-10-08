@@ -11,11 +11,15 @@ These instructions will get you a copy of the project up and running on your loc
 4. ``` python3 -m venv venv ``` (create virtual environment named venv)
 5. ``` source venv/bin/activate ``` (activate virtual environment)
 6. ``` pip3 install -r requirements.txt ``` (install dependencies)
-6. ``` python3 util.py -p (path to video)``` (this will convert the video to frames and save them in the frames folder)
-7. ``` python3 getLaneCoordinates.py ``` (a new window will open. Label lanes from left to right lane by clicking on the image. Press 's' to save the coordinates)
-8. ``` python3 getLaneCoordinates.py -t ``` ([Optional] click on the lane to test the coordinates you have saved)
-9. ``` python3 getDistance.py ``` ([Optional] this will label the vehicles using a simple tracking algorithm and save the labeled vehicle in data folder if you want to see labels)
-10. ``` python3 makeVideo.py ``` (this assumes, that you have cordinates of detected vehicle for each frame in a json file in data folder. Please check data folder for ''if all goes well this will get the final output video and final tracking_vehicle.json file is saved)
+7. ``` source bash.sh``` (this will execute all the required python files and create the final video in the data folder)
+
+(If you want to execute files individually ignore the 7th step and follow the following commands)
+
+8. ``` python3 util.py -p (path to video)``` (this will convert the video to frames and save them in the frames folder)
+9. ``` python3 getLaneCoordinates.py ``` (a new window will open. Label lanes from left to right lane by clicking on the image. Press 's' to save the coordinates)
+10. ``` python3 getLaneCoordinates.py -t ``` ([Optional] click on the lane to test the coordinates you have saved)
+11. ``` python3 getDistance.py ``` ([Optional] this will label the vehicles using a simple tracking algorithm and save the labeled vehicle in data folder if you want to see labels)
+12. ``` python3 makeVideo.py ``` (this assumes, that you have cordinates of detected vehicle for each frame in a json file in data folder. Please check data folder for ''if all goes well this will get the final output video and final tracking_vehicle.json file is saved)
 
 ## Methodology
 1. Detect vehicles using RCNN and save the coordinates of the bounding box for each frame in a JSON file. This is done using the provided jupyter notebook.
