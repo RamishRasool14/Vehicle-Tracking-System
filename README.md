@@ -1,6 +1,6 @@
 # Vehicle-Tracking-System
 
-![Alt Text](https://github.com/RamishRasool14/Vehicle-Tracking-System/data/test.gif)
+![Alt Text](data/test.gif)
 
 This is a project for tracking vehicles (lane of vehicle and the lane it through frames) using object detection RCNN and simple tracking algorithm that calculates the distance between detected objects between each frame and assigns the class label for which the distance is minimum and less than a threshold. Video is made from the perspective of a camera mounted on top of a bridge overlooking traffic.
 
